@@ -6,9 +6,9 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .giaoDien{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(LOGO.jpg);
+    height: 100vh;
+    
+    background-image: url(hospital.jpg) ;
     background-position: center;
     background-size: cover ;
     padding: 10px 10%;
@@ -16,18 +16,34 @@
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15vh;
+    background-color: rgba(255, 240, 240, 0.3);
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid white;
 }
-logo{
-    width: 1;
+.logo{
+    width: 90px;
+    margin-left: 100px;
 }
 nav ul li{
+    
     display: inline-block;
     list-style: none;
-    margin: 10px 15px;
+    margin: 10px 60px;
+}
+.ref{
+    text-decoration: none;
+    color: black;
+}
+.log{
+    margin-right: 100px;
 }
 .login-btn {
 
@@ -50,7 +66,7 @@ nav ul li{
     transition: 0.5s;
 }
 .content{
-    margin-top: 10%; 
+    margin-top: 20%; 
     max-width: 600px;
 }
 .content h1{
@@ -59,11 +75,15 @@ nav ul li{
     line-height: 2;
 }
 .content p{
+    font-size: 20px;
+    font-weight: 530;
     line-space: 0.5;
+    color: #222;
     animation-delay: 0.5s;
 
 }
 .content .btn {
+    margin-top: 20px;
     padding: 15px 80px;
     font-size: 20px;
     animation-delay: 1s;
@@ -82,11 +102,11 @@ nav ul li{
     right: 10%;
 }
 .anim{
-
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear  forwards;
 }
+
 @keyframes moveup{
     100% {
         opacity: 1;
