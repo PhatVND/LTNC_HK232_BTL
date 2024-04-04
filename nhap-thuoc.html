@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhap-thuoc</title>
+    
+</head>
+<link rel="stylesheet" href="assets/css/nhap-thuoc.css">
+<body>
+    <section  class= "title">
+        <div class="top">
+           <div>
+            <img src="assets/css/images/Hội_Chữ_thập_đỏ_Việt_Nam.svg.png" alt="" >
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <button class="return" >asdasd</button>     </button>
+            </a>
+           </div>
+            <div>
+                <h1>
+                    Dịch vụ nhân viên 
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <form action="" method="get" id="medicine-form">
+            <div class="firstline" >
+                <div>
+                    <label for="medicine-name" >Tên thuốc/ thiết bị y tế </label>
+                    <input type="text" name="medicine-name" id="medicine-name" placeholder="thuoc tri">
+                </div>
+                <div>
+                    <label for="medicine-quantity" id="cc">Số lượng</label>
+                    <input type="number" name="medicine-quantity" id="medicine-quantity" placeholder="666">
+                </div>
+                <div>
+                    <label for="medicine-unit" id="cc">Đơn vị</label>
+                    <select name="medicine-unit" id="medicine-unit">
+                        <option value="">đơn vị</option>
+                        <option value="Thùng"> Thùng </option>
+                        <option value="Hộp"> Hộp </option>
+                        <option value="Máy"> Máy </option>
+                        <option value="Bịch"> Bịch </option>
+                    </select>
+                </div>
+            </div>
+            <div id="line">
+                <label for="date-arrive">Ngày nhập kho</label>
+                <input type="text" name="date-arrive" id="date-arrive" placeholder="08/21/2004" onfocus="(this.type='date')">
+            </div>
+            <div id="line">
+                <label for="expired-date">Hạn sử dụng</label>
+                <input type="text" name="expired-date" id="expired-date" placeholder="08/21/2004" onfocus="(this.type='date')">
+            </div>
+        </form>
+        <button form="medicine-form">Thêm</button>
+    </section>
+    <section class="table">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Slg</th>
+                    <th>Dvi</th>
+                    <th>Ngày nhập</th>
+                    <th>HSD</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thuốc ngủ</td>
+                    <td>30</td>
+                    <td>Hộp</td>
+                    <td>31/3/2024</td>
+                    <td>31/3/2030</td>
+                    <td><button>del</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Thuốc trầm cảm</td>
+                    <td>40</td>
+                    <td>Hộp</td>
+                    <td>31/3/2024</td>
+                    <td>31/3/2030</td>
+                    <td><button>del</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Thuốc chuột</td>
+                    <td>10</td>
+                    <td>Hộp</td>
+                    <td>31/3/2024</td>
+                    <td>31/3/2030</td>
+                    <td><button>del</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Thuốc an thần</td>
+                    <td>30</td>
+                    <td>Hộp</td>
+                    <td>31/3/2024</td>
+                    <td>31/3/2030</td>
+                    <td><button>del</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
