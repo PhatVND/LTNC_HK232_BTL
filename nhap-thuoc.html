@@ -24,19 +24,19 @@
         </div>
     </section>
     <section class="form">
-        <form action="" method="get" id="medicine-form">
+        <form action="" method="get" id="medicine-form" onsubmit="myFunction(); return false;" required>
             <div class="firstline" >
                 <div>
                     <label for="medicine-name" >Tên thuốc/ thiết bị y tế </label>
-                    <input type="text" name="medicine-name" id="medicine-name" placeholder="thuoc tri">
+                    <input type="text" name="medicine-name" id="medicine-name" placeholder="thuoc tri" required>
                 </div>
                 <div>
                     <label for="medicine-quantity" id="cc">Số lượng</label>
-                    <input type="number" name="medicine-quantity" id="medicine-quantity" placeholder="666">
+                    <input type="number" name="medicine-quantity" id="medicine-quantity" placeholder="666" required>
                 </div>
                 <div>
                     <label for="medicine-unit" id="cc">Đơn vị</label>
-                    <select name="medicine-unit" id="medicine-unit">
+                    <select name="medicine-unit" id="medicine-unit" required>
                         <option value="">đơn vị</option>
                         <option value="Thùng"> Thùng </option>
                         <option value="Hộp"> Hộp </option>
@@ -47,17 +47,17 @@
             </div>
             <div id="line">
                 <label for="date-arrive">Ngày nhập kho</label>
-                <input type="text" name="date-arrive" id="date-arrive" placeholder="08/21/2004" onfocus="(this.type='date')">
+                <input type="text" name="date-arrive" id="date-arrive" placeholder="08/21/2004" onfocus="(this.type='date')" required>
             </div>
             <div id="line">
                 <label for="expired-date">Hạn sử dụng</label>
-                <input type="text" name="expired-date" id="expired-date" placeholder="08/21/2004" onfocus="(this.type='date')">
+                <input type="text" name="expired-date" id="expired-date" placeholder="08/21/2004" onfocus="(this.type='date')" required>
             </div>
         </form>
         <button form="medicine-form">Thêm</button>
     </section>
     <section class="table">
-        <table class="content-table">
+        <table class="content-table" id="myTable">
             <thead>
                 <tr>
                     <th>STT</th>
