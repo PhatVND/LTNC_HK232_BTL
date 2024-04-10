@@ -1,0 +1,297 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow-x: hidden;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: #fff;
+    }
+    header nav{
+        align-items: center;
+        display: grid;
+        width: 90%;
+        margin: auto auto;
+        gap: 10px;
+        grid-template-columns: 240px auto 200px;
+        height: 60px;
+    }
+
+    header nav .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header nav .logo:hover {
+        cursor: pointer;
+    }
+    header nav .logo img{
+        height: 2rem;
+    }
+
+    header nav .sub-nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 1rem;
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    header nav .sub-nav li:hover {
+        cursor: pointer;
+        color: #00439c;
+
+    }
+
+    header nav .sub-nav .root {
+        display: flex;
+    }
+    header nav .sub-nav .sub-sub-nav {
+        display: none;
+    }
+
+    header nav .icon {
+        display: flex;
+        list-style-type: none;
+        gap: 1.1rem;
+    }
+    header nav .icon li:not(li.active) {
+
+        background-color: #0937ec;
+        border-radius: 30px;
+        padding: 1px 3px;
+    }
+    header nav .icon li.active {
+        border: solid 2px #000;
+        border-radius: 30px;
+        padding: 0px 3px;
+    }
+
+    header nav .icon li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav .icon li.active a {
+        color: #000;
+        
+    }
+
+
+    
+
+    .main {
+        height: 100vh;
+        position: relative;
+        background-color: #08254f;
+        width: 100%;
+        
+    }
+
+    .main .poitrait {
+        position: absolute;
+        z-index: 100;
+        height: 300px;
+        width: 280px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .main .poitrait img {
+        height: 100%;
+
+    }
+
+    .main .title {
+        font-size: 1rem;
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%,0);
+        
+    }
+    .main .title .name {
+        position: relative;
+        left: 2%;
+        color: #fff;
+    }
+
+    .main .info {
+        width: 80%;
+        height: 600px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-radius: 10px;
+    }
+
+    .main .info .left {
+        display: grid;
+        grid-template-rows: 30% 60% 10%;
+        width: 90%;
+        height: 90%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-right: 2px solid #555;
+    }
+
+    /* .main .info .left .main-info {
+        display: grid;
+        grid-template-rows: 60% 40%;
+
+    } */
+
+    .main .info .left .main-info img {
+        position: absolute;
+        top: -5%;
+        left: -2%;
+        height: 162px;
+        
+    }
+
+    .main .left .exp li {
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .main .left .contact {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .main .left .contact .cont {
+        display: grid;
+        grid-template-columns: 20px auto;
+    }
+
+    .main .left .contact .cont:hover {
+        cursor: pointer;
+    }
+
+
+    .main .right-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .right  {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .main .right .calender-title h3 {
+        text-align: center;
+    }
+
+    .main .right .calender {
+        margin-top: 10px;
+        height: 300px;
+        display: grid;
+        grid-template-rows: 20px auto auto auto auto auto;
+    }
+
+    .main .right .month {
+        width: 140px;
+        height: 30px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 25px auto 25px;
+        align-items: center;
+        position: relative;
+        left: 86%;
+        transform: translate(-50%,0);
+    }
+
+    .main .right .month button{
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s ease;
+
+    }
+    
+    .main .right .month button:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+
+
+    .main .right .calender .week {
+        display: grid;
+        grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
+    }
+
+    .main .right .day-in-week {
+        background-color: #333;
+        margin: 3px;
+        border-radius: 5px;
+        position: relative;
+        opacity: 80%;
+    }
+
+    .main .right .day-in-week:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+        opacity: 100%;
+
+    }
+
+    .main .right .day-in-week .circle {
+        height: 15px;
+        width: 15px;
+        background-color: aqua;
+        border-radius: 100%;
+        position: relative;
+        top: 5%;
+        left: 5%;
+    }
+
+    .main .right .day-name {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .right-container .button-confirm {
+        position: relative;
+        top: -10%;
+    }
+
+    .main .right-container .button-confirm > button {
+        position: relative;
+        left: 4%;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        font-weight: 600;
+    }
+
+    .main .right-container .button-confirm > button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+
+
+
