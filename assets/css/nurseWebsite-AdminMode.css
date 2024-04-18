@@ -249,17 +249,13 @@ header nav .icon li.active a {
 
 .nurse-list {
     position: relative;
-    height: 670px;
+    height: 630px;
     margin-top: 100px;
     background-image: url(./images/background_yta2.png);
     background-position: center center;
     background-size: cover;
-    overflow-y: auto;
-    max-height: 600px;
-    padding-right: 15px;
-    display: flex;
-    width: 100%;
-
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .nurse-info {
@@ -270,29 +266,27 @@ header nav .icon li.active a {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 66.66%;
-    /* Chiếm 2/3 màn hình bên trái */
     order: 1;
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
+    max-height: 630px; /* Đặt chiều cao tối đa */
 }
 
 .nurse-list .title {
+    color: rgb(131, 187, 232);
     text-align: right;
-    position: -webkit-sticky;
     position: sticky;
-    top: 30px;
-    right: 0;
+    margin-right: 40px;
+    margin-top: 50px;
     z-index: 1;
     background-color: transparent;
-    width: 33.33%;
-    /* Chiếm 1/3 màn hình bên phải */
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
     font-size: 4rem;
     text-transform: uppercase;
-    border-left: 10px solid #888;
-    padding-left: 10px;
     order: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng và làm nổi chữ */
 }
+
 
 .nurse-list .nurse-name {
     position: relative;
@@ -545,144 +539,6 @@ header nav .icon li.active a {
 .cpr .cpr-contain p {
     font-size: 0.7rem;
     font-style: italic;
-}
-
-.footer {
-    width: 100%;
-    height: 330px;
-    background-color: #00439c;
-}
-
-.footer .name {
-    height: 20%;
-    /* background-color: #1e1f24; */
-    border-bottom: #3369b0 solid 1px;
-    width: 90%;
-    margin-top: 5px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    align-items: center;
-}
-
-.footer .name img {
-    height: 60%;
-    position: relative;
-    margin-right: 10px;
-
-}
-
-.footer .name p {
-    color: #fff;
-}
-
-.footer .nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 90%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 15px;
-    border-bottom: #3369b0 solid 1px;
-    margin-top: 15px;
-    justify-content: space-between;
-}
-
-.footer .nav ul {
-
-    list-style-type: none;
-    color: #fff;
-    font-size: 1.15rem;
-    line-height: 2rem;
-}
-
-.footer .item>ul>li:first-child {
-    font-weight: 600;
-}
-
-.footer .item>ul>* {
-    transition: 0.5s;
-}
-
-.footer .item>ul>*:not(li:first-child):hover {
-    cursor: pointer;
-    color: #999;
-}
-
-.footer .item .all-icon {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 30px;
-    width: 80%;
-}
-
-.footer .item div.icon img {
-
-    z-index: 10;
-}
-
-.footer .item .icon img {
-    height: 30px;
-}
-
-.footer .item .icon img:hover {
-    opacity: 70%;
-    scale: 1.1;
-
-}
-
-
-
-.footer .cpr {
-    margin-top: 20px;
-    color: #fff;
-    width: 90%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: #3369b0 solid 1px;
-    height: 16%;
-}
-
-.footer .cpr span {
-    text-decoration: underline;
-}
-
-.footer .cpr span:hover {
-    color: #90afd6;
-    cursor: pointer;
-}
-
-.footer .place {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 20px;
-    height: 50px;
-    align-items: center;
-    color: #fff;
-}
-
-.footer .place .lang {
-    display: flex;
-    gap: 10px;
-
-}
-
-.footer .place .lang div:hover {
-    cursor: pointer;
-}
-
-.footer .place .info ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-
 }
 
 
@@ -956,3 +812,130 @@ header nav .icon li.active a {
 }
 
 /* END BUTTONS */
+
+
+/* Section-7 */
+
+.section-7 {
+    background-color: #4E8DBD;
+}
+
+.pre-header.section-7 .inner-left .inner-dsc-top{
+    color: #fff;
+}
+
+.pre-header.section-7 .inner-left .inner-dsc-bottom{
+    color: #fff;
+}
+
+.pre-header.section-7 .inner-right .inner-dsc-top{
+    color: #fff;
+}
+
+.pre-header.section-7 .inner-right .inner-dsc-bottom{
+    color: #fff;
+}
+
+.pre-header.section-7 hr {
+    background-color: #ffffff71;
+    margin-top: 20px;
+}
+/* Section-7 */
+
+
+
+/* Section-8 */
+
+.section-8 {
+    background-color: #4E8DBD;
+}
+
+.section-8 .item .inner-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-8 .item .inner-dsc{
+    color: #D3E2EE;
+    font-size: 14px;
+}
+
+.section-8 .item .inner-social i{
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0;
+    margin-right: 5px;
+}
+
+.section-8 .item .inner-info .inner-place i {
+    color: #3D6889;
+}
+
+.section-8 .item .inner-info .inner-place span {
+    color: #D3E2EE;
+    font-size: 14px;
+}
+
+.section-8 .item .inner-info .phone{
+    margin: 20px 0;
+}
+
+.section-8 .item .inner-info .phone span {
+    color: #D3E2EE;
+    font-size: 14px;
+
+}
+
+.section-8 .item .inner-info .phone i {
+    color: #3D6889;
+}
+
+.section-8 .item .inner-info .email span {
+    color: #D3E2EE;
+    font-size: 14px;
+}
+
+.section-8 .item .inner-info .email i {
+    color: #3D6889;
+}
+
+.section-8 .item form {
+    margin-top: 20px;
+}
+
+.section-8 .item form input {
+    border: 1px solid #fff!important;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 270px;
+}
+
+.section-8 .item form button {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #fff!important;
+    margin-left: -5px;
+}
+
+.section-8 .item form button i {
+    color: gray;
+
+}
+
+/* Section-8 */
+
+
+/* Section-9 */
+
+.section-9 {
+    background-color: #3D6889;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section-9 */
