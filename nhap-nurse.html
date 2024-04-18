@@ -1,74 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhập thông tin Y Tá </title>
-    <link rel ="stylesheet" href="assets/css/nhap-nurse.css"/>
+    <link rel="stylesheet" href="assets/css/nhap-nurse.css" />
 </head>
+
 <body>
-    <section class = "container">
-        <header>Nhập thông tin y tá </header>
-        <form action ="#" class = "form" >
-            <div class ="input-box">
-                <label> Họ và Tên</label>
-                <input type ="text" placeholder ="Nguyễn Văn A" required/>
-            </div>
+    <section class="container">
+        <div class="Intro">
+            <header>Nhập thông tin y tá </header>
+        </div>
 
-            <div class ="input-box">
-                <label> CCCD</label>
-                <input type ="text" placeholder ="040204002390" required/>
-            </div>
+        <div class="Main">
+            <form action="#" class="form">
+                <div class="personal-info">
+                    <h2>Thông tin cá nhân</h2>
+                    <div class="input-box">
+                        <label>Họ và Tên</label>
+                        <input type="text" placeholder="Nguyễn Văn A" required />
+                    </div>
 
-            <div class="column">
-                <div class ="input-box">
-                    <label> Ngày sinh</label>
-                    <input type ="date" placeholder ="..." required/>
+                    <div class="gender-box">
+                        <h3>Giới tính</h3>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input type="radio" id="check-nam" name="gender" checked />
+                                <label for="check-nam">Nam</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-nu" name="gender" />
+                                <label for="check-nu">Nữ</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>CCCD</label>
+                        <input type="text" placeholder="------------" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label>Ngày cấp</label>
+                        <input type="date" placeholder="dd/mm/yy" />
+                    </div>
+
+                    <div class="input-box">
+                        <label>Ngày sinh</label>
+                        <input type="date" placeholder="..." required />
+                    </div>
+
+                    <div class="input-box">
+                        <label>Địa chỉ thường trú</label>
+                        <input type="text" placeholder="Vinh, Nghệ An" required />
+                    </div>
+
+                    <!-- Thêm mục load ảnh căn cước công dân -->
+                    <div class="input-box">
+                        <label>Ảnh căn cước công dân</label>
+                        <input type="file" accept="image/*" required />
+                    </div>
+
+                    <!-- Thêm mục load ảnh chân dung -->
+                    <div class="input-box">
+                        <label>Ảnh chân dung</label>
+                        <input type="file" accept="image/*" required />
+                    </div>
                 </div>
 
-                <div class ="input-box">
-                    <label> Thường trú</label>
-                    <input type ="text" placeholder ="Vinh, Nghệ An" required/>
-                </div>
-            </div>
-            <div class="gender-box">
-                <h3> Giới tính</h3>
-                <div class="gender-option">
-                    <div class="gender">
-                        <input type ="radio" id ="check-nam" name ="gender" checked/>
-                        <label for ="check-nam">Nam</label>
+                <div class="work-info">
+                    <h2>Thông tin làm việc</h2>
+                    <div class="input-box">
+                        <label>Bằng cấp</label>
+                        <select class="selection">
+                            <option hidden>Chọn</option>
+                            <option>Cao đẳng</option>
+                            <option>Cử nhân</option>
+                            <option>Thạc sĩ</option>
+                            <option>Tiến sĩ</option>
+                        </select>
                     </div>
-                    <div class="gender">
-                        <input type ="radio" id ="check-nu" name ="gender"/>
-                        <label for ="check-nu">Nữ</label>
-                    </div> 
-                    <div class="gender">
-                        <input type ="radio" id ="check-khac" name ="gender"/>
-                        <label for ="check-khac">Khác</label>
-                    </div>
-                </div>
-            </div>
 
-            <div class ="input-box bangcap">
-                <label> Bằng cấp</label>
-                <div class="column">
-                    <div class="select-box">
-                        <select>
-                        <option hidden>Chọn</option>
-                        <option>Cao đẳng</option>
-                        <option>Cử nhân</option>
-                        <option>Thạc sĩ</option>
-                        <option>Tiến sĩ</option>
-                    </select>
+                    <div class="input-box">
+                        <label>Ngày cấp</label>
+                        <input type="date" placeholder="Ngày cấp" />
                     </div>
-                    <div >
-                        <input type ="date" placeholder ="Ngày cấp" />
+
+                    <div class="input-box">
+                        <label>Khoa</label>
+                        <select class="selection">
+                            <option hidden>Chọn</option>
+                            <option>Khoa Ngoại tổng quát</option>
+                            <option>Khoa Nội tiêu hóa</option>
+                            <option>Khoa Tim mạch</option>
+                            <option>Khoa Ngoại thần kinh</option>
+                            <option>Khoa Phẫu thuật</option>
+                            <option>Khoa Sản phụ</option>
+                            <option>Khoa Nhi</option>
+                            <option>Khoa Y học hạt nhân</option>
+                            <option>Khoa Y tế công cộng</option>
+                            <option>Khoa học hỗ trợ</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Chuyên môn</label>
+                        <select class="selection">
+                            <option hidden>Chọn</option>
+                            <option>Khoa Ngoại tổng quát</option>
+                            <option>Khoa Nội tiêu hóa</option>
+                            <option>Khoa Tim mạch</option>
+                            <option>Khoa Ngoại thần kinh</option>
+                            <option>Khoa Phẫu thuật</option>
+                            <option>Khoa Sản phụ</option>
+                            <option>Khoa Nhi</option>
+                            <option>Khoa Y học hạt nhân</option>
+                            <option>Khoa Y tế công cộng</option>
+                            <option>Khoa học hỗ trợ</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Chức vụ</label>
+                        <select class="selection">
+                            <option hidden>Chọn</option>
+                            <option>Y tá trưởng</option>
+                            <option>Y tá phó</option>
+                            <option>Y tá phổ thông</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Cấp bậc</label>
+                        <select class="selection">
+                            <option hidden>Chọn</option>
+                            <option>Cao cấp</option>
+                            <option>Trung cấp</option>
+                            <option>Hạ cấp</option>
+                            <option>Thực tập sinh</option>
+                        </select>
+                    </div>
+
+                    <!-- Thêm mục load ảnh thẻ nhân viên -->
+                    <div class="input-box">
+                        <label>Ảnh thẻ nhân viên</label>
+                        <input type="file" accept="image/*" required />
                     </div>
                 </div>
-            </div>
+            </form>
+        </div>
+
+        <div class="XacNhan">
             <button>XÁC NHẬN</button>
-        </form>
+        </div>
     </section>
 </body>
+
 </html>
