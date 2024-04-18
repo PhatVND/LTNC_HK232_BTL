@@ -122,6 +122,7 @@ header nav .icon li.active a {
 
 .login-button a{
     position: absolute;
+    margin-right: 120px;
     top: 10px;
     right: 10px;
     padding: 8px 18px;
@@ -131,10 +132,28 @@ header nav .icon li.active a {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 10px;
 }
 
 .login-button:hover a {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.signin-button a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signin-button:hover a {
     background-color: #0056b3;
     color: white;
     text-decoration: none;
