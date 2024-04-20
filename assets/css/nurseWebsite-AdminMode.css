@@ -120,7 +120,7 @@ header nav .icon li.active a {
     color: #000;
 }
 
-.login-button a{
+.login-button a {
     position: absolute;
     margin-right: 120px;
     top: 10px;
@@ -140,7 +140,7 @@ header nav .icon li.active a {
     text-decoration: none;
 }
 
-.signin-button a{
+.signin-button a {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -286,8 +286,10 @@ header nav .icon li.active a {
     display: flex;
     flex-wrap: wrap;
     order: 1;
-    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
-    max-height: 630px; /* Đặt chiều cao tối đa */
+    overflow-y: auto;
+    /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
+    max-height: 630px;
+    /* Đặt chiều cao tối đa */
 }
 
 .nurse-list .title {
@@ -298,12 +300,12 @@ header nav .icon li.active a {
     margin-top: 50px;
     z-index: 1;
     background-color: transparent;
-    font-family: "Open Sans", sans-serif;
     font-weight: 900;
     font-size: 4rem;
     text-transform: uppercase;
     order: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng và làm nổi chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Đổ bóng và làm nổi chữ */
 }
 
 
@@ -484,11 +486,13 @@ header nav .icon li.active a {
     position: sticky;
     top: 30px;
     right: 10px;
-    z-index: 1; /* Đảm bảo nút hiển thị trên các phần tử khác */
+    z-index: 1;
+    /* Đảm bảo nút hiển thị trên các phần tử khác */
 }
 
 .add-button a {
-    display: block; /* Đảm bảo phần tử a có chiều rộng và chiều cao để nhận các thuộc tính CSS */
+    display: block;
+    /* Đảm bảo phần tử a có chiều rộng và chiều cao để nhận các thuộc tính CSS */
     background-color: #007bff;
     color: white;
     border: none;
@@ -576,7 +580,7 @@ header nav .icon li.active a {
     background-size: cover;
     background-color: rgba(255, 0, 255, 0.4);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 
     position: absolute;
     opacity: 50%;
@@ -590,39 +594,28 @@ header nav .icon li.active a {
 
 /* BEGIN: TITLE */
 .loop-slider .title {
-    position: absolute;
+    color: rgb(0, 0, 0);
     text-align: left;
-    height: 140px;
-    z-index: 2;
-    width: 85%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-left: #555 10px solid;
-    padding-left: 15px;
-
-    font-family: "Open Sans", sans-serif;
-
+    margin-left: 40px;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 4rem;
     text-transform: uppercase;
-    /* Chuyển đổi văn bản thành chữ hoa */
+    order: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Đổ bóng và làm nổi chữ */
 }
 
 .loop-slider .title span {
     color: #405a4a;
 }
 
-.loop-slider .title div {
-    margin-top: 20px;
-    max-width: 650px;
-}
-
-.loop-slider .title h1 {
-
-    font-size: 3rem;
-}
-
 .loop-slider .title p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #777;
+    margin-left: 40px;
 }
 
 .loop-slider .title img {
@@ -636,7 +629,7 @@ header nav .icon li.active a {
 /* BEGIN SLIDER */
 .loop-slider .slider {
     position: relative;
-    top: 35%;
+    top: 20%;
     left: 15%;
     transform: translate(0, -50%);
     display: flex;
@@ -775,6 +768,7 @@ header nav .icon li.active a {
     justify-content: center;
     gap: 5px;
     width: 100%;
+    top: 50%;
     position: absolute;
 
     transform: translate(0, -60px);
@@ -784,7 +778,7 @@ header nav .icon li.active a {
 
 .dots .dots-container li {
     height: 5px;
-    width: 30px;
+    width: 20px;
     background-color: #a4a4a4;
     border-radius: 30px;
 }
@@ -797,7 +791,7 @@ header nav .icon li.active a {
 /* BEGIN BUTTONS */
 .loop-slider>.background>.buttons3 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -831,130 +825,3 @@ header nav .icon li.active a {
 }
 
 /* END BUTTONS */
-
-
-/* Section-7 */
-
-.section-7 {
-    background-color: #4E8DBD;
-}
-
-.pre-header.section-7 .inner-left .inner-dsc-top{
-    color: #fff;
-}
-
-.pre-header.section-7 .inner-left .inner-dsc-bottom{
-    color: #fff;
-}
-
-.pre-header.section-7 .inner-right .inner-dsc-top{
-    color: #fff;
-}
-
-.pre-header.section-7 .inner-right .inner-dsc-bottom{
-    color: #fff;
-}
-
-.pre-header.section-7 hr {
-    background-color: #ffffff71;
-    margin-top: 20px;
-}
-/* Section-7 */
-
-
-
-/* Section-8 */
-
-.section-8 {
-    background-color: #4E8DBD;
-}
-
-.section-8 .item .inner-title{
-    color: #fff;
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.section-8 .item .inner-dsc{
-    color: #D3E2EE;
-    font-size: 14px;
-}
-
-.section-8 .item .inner-social i{
-    color: #fff;
-    cursor: pointer;
-    margin: 20px 0;
-    margin-right: 5px;
-}
-
-.section-8 .item .inner-info .inner-place i {
-    color: #3D6889;
-}
-
-.section-8 .item .inner-info .inner-place span {
-    color: #D3E2EE;
-    font-size: 14px;
-}
-
-.section-8 .item .inner-info .phone{
-    margin: 20px 0;
-}
-
-.section-8 .item .inner-info .phone span {
-    color: #D3E2EE;
-    font-size: 14px;
-
-}
-
-.section-8 .item .inner-info .phone i {
-    color: #3D6889;
-}
-
-.section-8 .item .inner-info .email span {
-    color: #D3E2EE;
-    font-size: 14px;
-}
-
-.section-8 .item .inner-info .email i {
-    color: #3D6889;
-}
-
-.section-8 .item form {
-    margin-top: 20px;
-}
-
-.section-8 .item form input {
-    border: 1px solid #fff!important;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 2px;
-    width: 270px;
-}
-
-.section-8 .item form button {
-    width: 40px;
-    height: 40px;
-    outline: none;
-    border: 1px solid #fff!important;
-    margin-left: -5px;
-}
-
-.section-8 .item form button i {
-    color: gray;
-
-}
-
-/* Section-8 */
-
-
-/* Section-9 */
-
-.section-9 {
-    background-color: #3D6889;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Section-9 */
