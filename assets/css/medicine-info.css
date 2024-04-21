@@ -82,20 +82,18 @@ form select{
 }
 .content-table{
 border-collapse: collapse;
-position: absolute;
+position: sticky;
 /* margin-left: auto;
 margin-right: auto; */
-height: 0px;
-width: 75%;
+width: 100%;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-top: 400px;
+bottom: 0px;
 left: 200px;
 overflow-y: scroll;
 }
 .content-table thead tr{
     /* display: block; */
-    background-color:  rgb(13, 71, 143);
     text-align: left;
     /* width: 100%; */
 }
@@ -103,9 +101,22 @@ overflow-y: scroll;
     padding: 12px 15px;
     /* width: 100%; */
 }
+.content-table th{
+    position: sticky;
+    top: 0px;
+    background-color:  rgb(13, 71, 143);
+}
+.table-wrapper{
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: 250px ;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .content-table tbody tr{
     border-bottom: 1px solid #dddddd;
-    background-color: #fff;
+    background-color:   rgb(23, 14, 150);
 }
 h2{
     position: absolute;
@@ -124,3 +135,4 @@ select:hover{
     background-color: #fff;
     
 }
+
