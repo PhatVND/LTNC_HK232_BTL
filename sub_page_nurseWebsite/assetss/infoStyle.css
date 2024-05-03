@@ -101,7 +101,7 @@ header nav .icon li.active a {
 
 .main {
     height: 40rem;
-    position: absolute;
+    position: relative;
     background-color: #08254f;
     width: 100%;
 }
@@ -123,9 +123,9 @@ header nav .icon li.active a {
 .button-interface {
     position: absolute;
     right: 0;
-    display: flex; /* Sử dụng flexbox */
-    flex-direction: column; /* Xếp các button theo chiều dọc */
-    align-items: flex-end; /* Đặt các button ở phía bên phải */
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .button-interface .top-button,
@@ -140,13 +140,13 @@ header nav .icon li.active a {
 }
 
 .button-interface .bottom-button {
-    border-bottom-left-radius: 20px; /* Bo tròn góc trái dưới */
-    margin-top: 10px; /* Khoảng cách giữa hai button */
+    border-bottom-left-radius: 20px; 
+    margin-top: 10px; 
 }
 
 .button-interface .top-button {
-    border-top-left-radius: 20px; /* Bo tròn góc trái dưới */
-    margin-top: 10px; /* Khoảng cách giữa hai button */
+    border-top-left-radius: 20px;
+    margin-top: 10px; 
 }
 
 .button-interface .top-button:hover,
@@ -156,7 +156,7 @@ header nav .icon li.active a {
 
 
 .main .title {
-    margin-top: 30px;
+    padding-top: 30px;
     text-align: left;
     margin-left: 75px;
     font-size: 1.5rem;
@@ -193,7 +193,6 @@ header nav .icon li.active a {
     transform: translate(-50%, -50%);
     border-right: 2px solid #060881;
     overflow-y: auto;
-    /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
 }
 
 .main-info table {
@@ -434,9 +433,9 @@ header nav .icon li.active a {
 .button-row .button-confirm,
 .button-row .button-edit {
     display: inline-block;
-    vertical-align: top; /* Canh chỉnh các button theo chiều dọc */
+    vertical-align: top;
 }
 
 .button-row .button-confirm {
-    margin-right: 18rem; /* Khoảng cách giữa các button */
+    margin-right: 18rem;
 }
