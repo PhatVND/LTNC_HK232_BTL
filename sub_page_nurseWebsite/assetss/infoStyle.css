@@ -397,9 +397,6 @@ header nav .icon li.active a {
     font-weight: 500;
 }
 
-.main .right-container .button-confirm {
-    position: left;
-}
 
 .main .right-container .button-confirm>button {
     width: 100px;
@@ -416,4 +413,30 @@ header nav .icon li.active a {
 .main .right-container .button-confirm>button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.main .right-container .button-edit>button {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.main .right-container .button-edit>button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.button-row .button-confirm,
+.button-row .button-edit {
+    display: inline-block;
+    vertical-align: top; /* Canh chỉnh các button theo chiều dọc */
+}
+
+.button-row .button-confirm {
+    margin-right: 18rem; /* Khoảng cách giữa các button */
 }
