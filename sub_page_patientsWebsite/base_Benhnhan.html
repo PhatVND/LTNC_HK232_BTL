@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin chi tiết | Y tá</title>
+    <link rel="stylesheet" href="assetss/infoStyle.css">
+    <link rel="stylesheet" href="assetss/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assetss/pics/logo3.png" alt="MIMONA logo">
+            </div>
+            <ul class="sub-nav">
+                <li>Giới thiệu</li>
+                <li>Danh sách</li>
+                <li class="root">
+                    <p>Hơn</p><span><i class=" tiny material-icons">chevron_right</i></span>
+                    <ul class="sub-sub-nav">
+                        <li>Chi phí khám</li>
+                        <li>Đặt lịch</li>
+                        <li>Tin tức</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="icon">
+                <li class="active"><a href="#"><i class="material-icons">home</i></a> </li>
+                <li><a href="#"><i class="material-icons">local_phone</i></a></li>
+                <li><a href="#"><i class="material-icons">local_post_office</i></a></li>
+                <li><a href="#"><i class="material-icons">person</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+
+        <!-- <div class="button-interface">
+            <button class="top-button">Giao diện khách</button>
+            <button class="bottom-button">Giao diện admin</button>
+        </div> -->
+
+        <div class="portrait">
+            <div class="portrait-container">
+                <label for="portrait-upload" class="upload-label">Upload Image</label>
+                <input type="file" id="portrait-upload" accept="image/*" onchange="previewImage(event)">
+                <div class="portrait-frame">
+                    <img id="portrait-preview" src="assetss/pics/11.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-edit">
+            <button>
+                <i class="material-icons">edit</i>
+            </button>
+        </div>
+
+
+
+        <div class="title">
+            <div class="name">
+                <h1>Bành Thị Kim Cúc</h1>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="left">
+                <div class="main-info">
+                    <b>Thông tin cá nhân</b>
+                    <table>
+                        <tr>
+                            <th>Mã số nhân viên</th>
+                            <td>2212629</td>
+                        </tr>
+                        <tr>
+                            <th>Ngày sinh</th>
+                            <td>12/12/2004</td>
+                        </tr>
+                        <tr>
+                            <th>Giới tính</th>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <th>Địa chỉ</th>
+                            <td>Hải Thượng Lãng Ông, quận 1, tp Đà Nẵng</td>
+                        </tr>
+                        <tr>
+                            <th>Số điện thoại</th>
+                            <td>0766909533</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="exp">
+                    <div class="timeline"></div>
+                    <ol> <b>Thông tin bổ sung</b>
+                        <li><b>Thói quen sinh hoạt:</b> [Mô tả về thói quen sinh hoạt hàng ngày của bệnh nhân, bao gồm
+                            lối sống, thói quen ăn uống, hút thuốc, uống rượu, tập thể dục và mức độ căng thẳng]</li>
+                        <li><b>Lịch sử gia đình:</b> [Thông tin về lịch sử bệnh lý của các thành viên trong gia đình của
+                            bệnh nhân]</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="main-info">
+                    <b>Thông tin y tế</b>
+                    <table>
+                        <tr>
+                            <th>Lịch sử bệnh lý</th>
+                            <td>[Tóm tắt lịch sử bệnh lý của bệnh nhân, bao gồm bệnh lý hiện tại và trước đây]</td>
+                        </tr>
+                        <tr>
+                            <th>Dấu vết y tế</th>
+                            <td>[Thông tin về các kết quả xét nghiệm, hình ảnh y học và thông tin khám bệnh trước đó của
+                                bệnh nhân]</td>
+                        </tr>
+                        <tr>
+                            <th>Tiền sử dị ứng</th>
+                            <td>[Thông tin về các tiền sử dị ứng của bệnh nhân, bao gồm thuốc, thức ăn, vật liệu y tế]
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Danh sách thuốc đang sử dụng</th>
+                            <td>[Danh sách các loại thuốc mà bệnh nhân đang sử dụng, bao gồm tên thuốc, liều lượng và
+                                tần suất sử dụng]</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="exp">
+                    <div class="timeline"></div>
+                    <ol> <b>Ghi chú</b>
+                        <li>[Bất kỳ thông tin bổ sung hoặc ghi chú nào có thể giúp bác sĩ hoặc nhân viên y tế hiểu rõ
+                            hơn về tình trạng sức khỏe của bệnh nhân]
+                        </li>
+                        <li>Thích giao tiếp với bác sĩ nữ</li>
+                        <li>Ngại uống thuốc có vị đắng</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

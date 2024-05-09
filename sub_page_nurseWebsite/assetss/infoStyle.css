@@ -3,10 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
 }
+
 header {
     position: sticky;
     top: 0;
@@ -14,14 +16,15 @@ header {
     z-index: 999;
     background-color: #fff;
 }
-header nav{
+
+header nav {
     align-items: center;
     display: grid;
     width: 90%;
     margin: auto auto;
     gap: 10px;
     grid-template-columns: 240px auto 200px;
-    height: 60px;
+    height: 7rem;
 }
 
 header nav .logo {
@@ -34,8 +37,9 @@ header nav .logo {
 header nav .logo:hover {
     cursor: pointer;
 }
-header nav .logo img{
-    height: 2rem;
+
+header nav .logo img {
+    height: 8rem;
 }
 
 header nav .sub-nav {
@@ -46,8 +50,9 @@ header nav .sub-nav {
     width: 60%;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
+
 header nav .sub-nav li:hover {
     cursor: pointer;
     color: #00439c;
@@ -57,6 +62,7 @@ header nav .sub-nav li:hover {
 header nav .sub-nav .root {
     display: flex;
 }
+
 header nav .sub-nav .sub-sub-nav {
     display: none;
 }
@@ -66,34 +72,36 @@ header nav .icon {
     list-style-type: none;
     gap: 1.1rem;
 }
+
 header nav .icon li:not(li.active) {
 
     background-color: #0937ec;
     border-radius: 30px;
     padding: 1px 3px;
 }
+
 header nav .icon li.active {
     border: solid 2px #000;
     border-radius: 30px;
     padding: 0px 3px;
 }
 
-header nav .icon li a{
+header nav .icon li a {
     color: white;
     text-decoration: none;
 }
 
 header nav .icon li.active a {
     color: #000;
-    
+
 }
 
 
 
 
 .main {
-    height: 91vh;
-    position: fixed;
+    height: 40rem;
+    position: relative;
     background-color: #08254f;
     width: 100%;
 }
@@ -109,11 +117,46 @@ header nav .icon li.active a {
 
 .main .poitrait img {
     height: 100%;
-
 }
 
+
+.button-interface {
+    position: absolute;
+    right: 0;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.button-interface .top-button,
+.button-interface .bottom-button {
+    width: 150px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-interface .bottom-button {
+    border-bottom-left-radius: 20px; 
+    margin-top: 10px; 
+}
+
+.button-interface .top-button {
+    border-top-left-radius: 20px;
+    margin-top: 10px; 
+}
+
+.button-interface .top-button:hover,
+.button-interface .bottom-button:hover {
+    background-color: #0056b3;
+}
+
+
 .main .title {
-    margin-top: 30px;
+    padding-top: 30px;
     text-align: left;
     margin-left: 75px;
     font-size: 1.5rem;
@@ -132,10 +175,10 @@ header nav .icon li.active a {
     position: relative;
     margin-top: 8px;
     left: 45%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     background-color: #fff;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
     border-radius: 10px;
 }
 
@@ -147,24 +190,40 @@ header nav .icon li.active a {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    border-right: 2px solid #555;
-    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
+    transform: translate(-50%, -50%);
+    border-right: 2px solid #060881;
+    overflow-y: auto;
 }
 
+.main-info table {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+.main-info th, .main-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.main-info th {
+    text-align: left;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
 
 .main .info .left .main-info img {
     position: absolute;
 }
 
-.main .info .left .main-info b{
+.main .info .left .main-info b {
     margin-top: 50px;
     margin-left: 10px;
     width: 87%;
     position: relative;
 }
 
-.main .info .left .main-info ul{
+.main .info .left .main-info ul {
     text-align: justify;
     width: 95%;
     position: relative;
@@ -172,7 +231,54 @@ header nav .icon li.active a {
 }
 
 
-.main .left .exp{
+.exp {
+    display: flex;
+    align-items: flex-start;
+}
+
+.exp ol {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: section;
+    position: relative;
+}
+
+.exp ol li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.exp ol li::before {
+    content: counter(section);
+    counter-increment: section;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    background-color: #7fc8d8;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.exp ol li::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    background-color: #7fc8d8;
+    z-index: -1;
+}
+
+
+.main .left .exp {
     margin-top: 50px;
     margin-left: 10px;
     width: 87%;
@@ -184,6 +290,7 @@ header nav .icon li.active a {
     width: 95%;
     position: relative;
     left: 10%;
+    margin-top: 10px;
 }
 
 /* .main .left .contact {
@@ -209,15 +316,16 @@ header nav .icon li.active a {
     grid-template-rows: auto auto;
 }
 
-.main .right  {
+.main .right {
     position: relative;
     width: 90%;
     height: 90%;
     top: 50%;
     left: 48%;
-    transform: translate(-50%,-50%);
-    
+    transform: translate(-50%, -50%);
+
 }
+
 .main .right .calender-title h3 {
     text-align: center;
 }
@@ -238,10 +346,10 @@ header nav .icon li.active a {
     align-items: center;
     position: relative;
     left: 86%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-.main .right .month button{
+.main .right .month button {
     border: none;
     border-radius: 10px;
     transition: 0.3s ease;
@@ -288,21 +396,46 @@ header nav .icon li.active a {
     font-weight: 500;
 }
 
-.main .right-container .button-confirm {
-    position: left;
-}
 
-.main .right-container .button-confirm > button {
-    position: relative;
-    left: 4%;
+.main .right-container .button-confirm>button {
+    width: 100px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
-.main .right-container .button-confirm > button:hover {
+.main .right-container .button-confirm>button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.main .right-container .button-edit>button {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.main .right-container .button-edit>button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.button-row .button-confirm,
+.button-row .button-edit {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button-row .button-confirm {
+    margin-right: 18rem;
 }
