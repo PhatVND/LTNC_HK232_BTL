@@ -1,169 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thong tin thuoc</title>
-    
+    <title>Thuốc | Bệnh viện Đa khoa MINONA</title>
+    <link rel="stylesheet" href="assets\css\medicine-info.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,700;1,700&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
-<link rel="stylesheet" href="assets/css/medicine-info.css">
-     
+
 <body>
-    <section  class= "title">
-        <div class="top">
-           <div>
-            <!-- <img src="assets/css/images/Hội_Chữ_thập_đỏ_Việt_Nam.svg.png" alt="" > -->
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <button class="return" ><img src="assets/css/images/Hội_Chữ_thập_đỏ_Việt_Nam.svg.png" alt="" ></button>     </button>
-            </a>
-           </div>
-            <div>
-                <h1>
-                    Quản lý thuốc và thiết bị 
-                </h1>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets\css\images\nursewebsitelogo.png" alt="MIMONA logo">
+                <h3>BỆNH VIỆN <br> ĐA KHOA MIMONA</h3>
+            </div>
+            <ul class="sub-nav">
+                <li>Giới thiệu</li>
+                <li><a href="#lucluongyta">Danh sách</a></li>
+                <li>Chi phí khám</li>
+                <li>Đặt lịch</li>
+                <li>Tin tức</li>
+            </ul>
+            <ul>
+                <button class="login-button"><a href="login.html">Đăng nhập</a></button>
+            </ul>
+            <ul>
+                <button class="signin-button"><a href="login.html">Đăng ký</a></button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="info">
+                <div class="info-content">
+                    <h1 class="DNYT">Kho thuốc</h1>
+                    <p>Danh sách thuốc phong phú tại Kho thuốc của bệnh viện, bao gồm cả thuốc tổng hợp và chi tiết cho
+                        mọi tình huống y tế, đảm bảo sự đa dạng và chất lượng trong chăm sóc sức khỏe.
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button>Tra cứu</button>
+                    <button>Chi tiết</button>
+                </div>
             </div>
         </div>
-    </section>
-    <section> 
-        <form action="" method="get" id="type-form">
-            <select name="type-of-display" id="type-of-display" >
-                <option value="">Tìm kiếm theo</option>
-                <option value="op1"> Sắp xếp theo thứ tự bảng chữ cái </option>
-                <option value="op2"> Sắp xếp theo hạn sử dụng </option>
-            </select>
-        </form>
-        <button form="type-form" id="submit-button"> Xác nhận</button>
-    </section>
-    <section class="search">
-        <form action="" method="get" id="search-form">
-            <input type="text" name="medicine-search" id="medicine-search" placeholder="Tìm kiếm">
-        </form>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <button><img src="assets/css/images/search-button-svg.svg" alt=""></button>
-        </a>
 
-    </section>
-    <section>
-    </section>
-    <section class="table">
-        <h2>Danh sách thuốc và trang thiết bị</h1>
-        <div class="table-wrapper">
-            <table class="content-table" id="myTable">
-                <thead>
-                    <tr>
-                        <th>STT</th>
-                        <th>Tên</th>
-                        <th>Slg</th>
-                        <th>Dvi</th>
-                        <th>Ngày nhập</th>
-                        <th>HSD</th>
-                        <th>Ngày xuất kho</th>
-                        </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Thuốc ngủ</td>
-                        <td>30</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2030</td>
-                        <td>11/9/2001</td>
-                        </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Thuốc trầm cảm</td>
-                        <td>40</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2030</td>
-                        <td>11/9/2001</td>
-                    
-                        </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Thuốc chuột</td>
-                        <td>10</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2030</td>
-                        <td>11/9/2001</td>
-                        </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Thuốc an thần</td>
-                        <td>30</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2031</td>
-                        <td>11/9/2001</td>
-                        </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Thuốc an thần</td>
-                        <td>30</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2032</td>
-                        <td>11/9/2001</td>
-                        </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Thuốc an thần</td>
-                        <td>30</td>
-                        <td>Hộp</td>
-                        <td>31/3/2024</td>
-                        <td>31/3/2033</td>
-                        <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Thuốc an thần</td>
-                            <td>30</td>
-                            <td>Hộp</td>
-                            <td>31/3/2024</td>
-                            <td>31/3/2030</td>
-                            <td>-</td>
-                            </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Thuốc an thần</td>
-                            <td>30</td>
-                            <td>Hộp</td>
-                            <td>31/3/2024</td>
-                            <td>31/3/2030</td>
-                            <td>-</td>
-                            </tr>    
-                        <tr>
-                            <td>4</td>
-                            <td>Thuốc an thần</td>
-                            <td>30</td>
-                            <td>Hộp</td>
-                            <td>31/3/2024</td>
-                            <td>31/3/2030</td>
-                            <td>-</td>
-                            </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Thuốc an thần</td>
-                            <td>30</td>
-                            <td>Hộp</td>
-                            <td>31/3/2024</td>
-                            <td>31/3/2030</td>
-                            <td>-</td>
-                            </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Thuốc an thần</td>
-                            <td>30</td>
-                            <td>Hộp</td>
-                            <td>31/3/2024</td>
-                            <td>31/3/2030</td>
-                            <td>-</td>
-                            </tr>
-                </tbody>
-            </table>
+
+        <!-- <div class="table1">
+            <div class="table-justify">
+                <div class="title-content">
+                    <h2><i class="material-icons">person</i> SỐ LƯỢNG </h2>
+                    <h2><i class="material-icons">check</i> CHẤT LƯỢNG</h2>
+                </div>
+                <div class="table-content col-2">
+                    <div class="sub-content col-2">
+                        <div>
+                            <p>03/2023</p>
+                            <p>Số lượng: 223</p>
+                        </div>
+                        <div>
+                            <p>03/2024</p>
+                            <p>Số lượng: 304</p>
+                        </div>
+                    </div>
+                    <div class="sub-content">
+                        <div>
+                            <p>96/304 y tá Đạt kiểm định Hoa Kỳ</p>
+                        </div>
+                        <div>
+                            <p>50/304 y tá Vượt chuẩn chuyên môn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+
+    <div class="container1">
+        <div class="thanh_tim_kiem">
+            <form action="" method="get" id="type-form">
+                <select name="type-of-display" id="type-of-display">
+                    <option value="">Tìm kiếm theo</option>
+                    <option value="op1"> Sắp xếp theo thứ tự bảng chữ cái </option>
+                    <option value="op2"> Sắp xếp theo hạn sử dụng </option>
+                </select>
+            </form>
+            <button form="type-form" id="submit-button"> Xác nhận</button>
         </div>
-    </section>
+
+        <div class="search">
+            <form action="" method="get" id="search-form">
+                <input type="text" name="medicine-search" id="medicine-search" placeholder="Tìm kiếm">
+            </form>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <button class="KinhLup-button"><img src="assets/css/images/search-button-svg.svg" alt=""></button>
+            </a>
+        </div>
+
+        <section class="table">
+            <h2>Danh sách thuốc và trang thiết bị</h2>
+            <div class="table-wrapper">
+                <table class="content-table" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Số lượng</th>
+                            <th>Đơn vị</th>
+                            <th>Ngày nhập</th>
+                            <th>HSD</th>
+                            <th>Ngày xuất kho</th>
+                            <th> </th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Thuốc ngủ</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>11/9/2001</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Thuốc trầm cảm</td>
+                            <td>40</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>11/9/2001</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Thuốc chuột</td>
+                            <td>10</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>11/9/2001</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2031</td>
+                            <td>11/9/2001</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2032</td>
+                            <td>11/9/2001</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2033</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thuốc an thần</td>
+                            <td>30</td>
+                            <td>Hộp</td>
+                            <td>31/3/2024</td>
+                            <td>31/3/2030</td>
+                            <td>-</td>
+                            <td><button class="Edit-button">edit</button></td>
+                            <td><button><img src="anh/thung_rac.png" width="30px" height="30px" alt=""></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <button class="Add-button">Add</button>
+    </div>
 </body>
+
 </html>
