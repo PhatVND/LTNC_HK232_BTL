@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập thuốc</title>
+    <link rel="stylesheet" href="assets/css/nhap_benh_nhan.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="Intro">
+        <header>Nhập thuốc</header>
+      </div>
+
+      <div class="Main">
+        <form action="#" class="form">
+          <div class="personal-info">
+            <h2></h2>
+            <div class="input-box">
+              <label>Tên thuốc/ thiết bị y tế</label>
+              <input type="text" placeholder="Thuốc đau đầu" required />
+            </div>
+
+            <div class="input-box">
+              <label>CCCD</label>
+              <input type="text" placeholder="------------" required />
+            </div>
+
+            <div class="input-box">
+              <label>Ngày cấp</label>
+              <input type="date" placeholder="dd/mm/yy" />
+            </div>
+
+            <div class="input-box">
+              <label>Ngày sinh</label>
+              <input type="date" placeholder="..." required />
+            </div>
+
+            <div class="input-box">
+              <label>Địa chỉ thường trú</label>
+              <input type="text" placeholder="Vinh, Nghệ An" required />
+            </div>
+
+            <!-- Thêm mục load ảnh căn cước công dân -->
+            <div class="input-box">
+              <label>Ảnh căn cước công dân</label>
+              <input type="file" accept="image/*" required />
+            </div>
+
+            <!-- Thêm mục load ảnh chân dung -->
+            <div class="input-box">
+              <label>Ảnh chân dung</label>
+              <input type="file" accept="image/*" required />
+            </div>
+          </div>
+
+          <div class="work-info">
+            <h2>Thông tin khám bệnh</h2>
+            <div class="input-box">
+              <label>Tiền sử bệnh</label>
+              <input type="text" placeholder="Bệnh tim, v..v.." required />
+            </div>
+            <div class="input-box">
+              <label>Vấn đề sức khỏe hiện tại.</label>
+              <input type="text" placeholder="---------" required />
+            </div>
+            <div class="input-box">
+              <label>Mã bảo hiểm y tế.</label>
+              <input type="text" placeholder="---------" required />
+            </div>
+            <div class="input-box">
+              <label>Ngày khám</label>
+              <input type="date" placeholder="Ngày khám" />
+            </div>
+
+            <div class="input-box">
+              <label>Thuốc đã/đang sử dụng</label>
+              <input type="text" placeholder="Nhập tên thuốc" />
+            </div>
+
+            <div class="column">
+              <div class="input-box">
+                <label> Liều lượng</label>
+                <input type="text" placeholder="Nhập liều lượng" required />
+              </div>
+
+              <div class="input-box">
+                <label> Tần suất sử dụng</label>
+                <input type="text" placeholder="Nhập tần suất" required />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="XacNhan">
+        <button>XÁC NHẬN</button>
+      </div>
+    </section>
+  </body>
+</html>

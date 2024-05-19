@@ -183,6 +183,7 @@ header nav .icon li.active a {
     max-width: 600px;
 }
 
+
 .container .content .info-content {
     color: #fff;
 }
@@ -225,6 +226,8 @@ header nav .icon li.active a {
 
 
 
+
+
 .container1 {
     position: relative;
     max-width: 1300px;
@@ -238,6 +241,20 @@ header nav .icon li.active a {
     margin-bottom: 50px;
 }
 
+
+.form {
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
 
 form select {
     width: 15%;
